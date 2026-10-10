@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>still gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="frame" id="frame">
+        <header class="top">
+            <a href="#" class="logo" aria-label="still gallery">My<br>Wife💗</a>
+            <nav aria-label="Main">
+                <a href="#" data-view="gallery" class="active">gallery</a>
+                <a href="#" data-view="about">about</a>
+                <a href="#" data-view="contact">contact</a>
+            </nav>
+
+            <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false"
+                aria-label="Turn ambient sound on">
+                <span class="sound-icon" aria-hidden="true">♪</span>
+                <span id="soundLabel">SOUND OFF</span>
+            </button>
+
+            <audio id="ambientSound" src="foto/sound_1.mp3" loop preload="none  "></audio>
+
+        </header>
+
+        <main class="stage" id="stage" aria-label="Photo gallery" tabindex="0">
+            <ul class="track" id="track"></ul>
+            <p class="caption" id="caption" aria-live="polite"><span id="cap-no">004</span><i>/</i><span
+                    id="cap-loc">Vienna, Austria</span></p>
+        </main>
+
+        <div class="hint" aria-label="Navigate">
+            <button id="prev" aria-label="Previous photo">&uarr;</button>
+            <span>scroll</span>
+            <button id="next" aria-label="Next photo">&darr;</button>
+        </div>
+
+        <section class="panel" id="about" aria-hidden="true">
+            <h2>about</h2>
+            <p>web ini gua buat cuman buat ngejelasin bahwa gua sayang banget sama CALON ISTR GUA Yeeee.....</p>
+        </section>
+        <section class="panel" id="contact" aria-hidden="true">
+            <h2>contact</h2>
+            <p><a href="mailto:muhammadraihanamsyar28@gmail.com">muhammadraihanamsyar28@gmail.com</a></p>
+            <p>Kontak gua kalo mau ngobrol atau ada yang mau ditanyain yeee</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
